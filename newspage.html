@@ -7,15 +7,10 @@
 <head>
     <link rel="stylesheet" href="" />
     <style>
-        /*
-        .newsArticles{
-            border: 1px solid #606669;
-            border-radius: 0;
-        }
-        */
-        body{
+        body {
             font-size: 16px;
         }
+
         .listArticle {
             margin: 0px;
             padding: 10px;
@@ -27,7 +22,7 @@
             display: flex;
             background-color: #fff;
         }
-        
+
 
         .listArticle .flex-container .news-headline {
             width: 60%;
@@ -36,12 +31,12 @@
         .listArticle h4 {
             padding: 5px;
             color: #0059bf;
-            font-size:0.75em;
+            font-size: 0.75em;
         }
 
         .listArticle .flex-container .news-headline h3 {
             padding: 5px;
-            font-size:1.125em;
+            font-size: 1.125em;
             color: #000;
         }
 
@@ -49,120 +44,91 @@
             margin: 0;
             padding: 10px 5px;
             font-size: 1em;
-            color:#606669;
-        }
-        .listArticle .flex-container .news-img{
-            margin: 0;
-            padding: 0;
-            /*width: 316px;
-            height: 237px;*/
-            width:40%;
+            color: #606669;
         }
 
-        .listArticle .flex-container .news-img img{
-                margin: 0 auto;
-                /*padding: 0px 5px;*/
-                width: 316px;
-                height: 237px;
-                float: left;
+        .listArticle .flex-container .news-img {
+            margin: 0;
+            padding: 0;
+
+            width: 40%;
+        }
+
+        .listArticle .flex-container .news-img img {
+            margin: 0 auto;
+
+            width: 316px;
+            height: 237px;
+            float: left;
         }
 
         /** Mediaqueries for tablet **/
 
         @media only screen and (min-width: 768px) and (max-width: 1024px) {
-            body{
+            body {
                 font-size: 16px;
             }
+
             .listArticle .flex-container {
                 display: flex;
                 background-color: #fff;
             }
+
             .listArticle .flex-container .news-headline {
                 width: 60%;
             }
-            .listArticle .flex-container .news-img{
+
+            .listArticle .flex-container .news-img {
                 margin: 0;
                 padding: 0px 5px;
-                /*width: 316px;
-                height: 237px;*/
+
                 width: 40%;
             }
-            
-            .listArticle .flex-container .news-img img{
-                /*margin: 0;
-                padding: 0px 5px;*/
+
+            .listArticle .flex-container .news-img img {
+
                 width: 316px;
                 height: 237px;
                 float: left;
             }
         }
 
-        
+
         /** Media queries for mobile **/
         @media only screen and (min-width: 321px) and (max-width: 767px) {
-            body{
+            body {
                 font-size: 14px;
             }
+
             .listArticle .flex-container {
                 display: block;
                 background-color: #fff;
             }
+
             .listArticle .flex-container .news-headline {
                 width: 100%;
             }
-            .listArticle .flex-container .news-img{
+
+            .listArticle .flex-container .news-img {
                 margin: 0;
                 padding: 0px 5px;
-                /*width: 316px;
-                height: 237px;*/
+
                 width: 100%;
             }
-            .listArticle .flex-container .news-img img{
-                /*margin: 0;
-                padding: 0px 5px;*/
+
+            .listArticle .flex-container .news-img img {
+
                 width: 316px;
                 height: 237px;
-                
+
             }
         }
     </style>
-    
+
 </head>
 
 <body>
     <div id="newsArticles">
-        <!--<article class="listArticle">
-            <h3>'Further restrictions': Warning for NSW</h3>
-            <div class="flex-container">
-                <div class="news-headline">
-                    NSW residents have been urged to think about their movements this weekend, with the premier warning
-                    she
-                    doesn't want to have to impose further restrictions.
-                </div>
-                <div class="news-img">
-                    <img src="https://content.api.news/v3/images/bin/7fb8522d275a99adfaa6e642ea23fa83?width=316"
-                        width="316" height="237" />
-                </div>
-
-            </div>
-            <hr />
-        </article>
-        <article class="listArticle">
-            <h3>'Further restrictions': Warning for NSW</h3>
-            <div class="flex-container">
-                <div class="news-headline">
-                    NSW residents have been urged to think about their movements this weekend, with the premier warning
-                    she
-                    doesn't want to have to impose further restrictions.
-                </div>
-                <div class="news-img">
-                    <img src="https://content.api.news/v3/images/bin/7fb8522d275a99adfaa6e642ea23fa83?width=316"/>
-                </div>
-
-            </div>
-            <hr />
-        </article> -->
-
     </div>
     <script src="./newspage.js"></script>
 </body>

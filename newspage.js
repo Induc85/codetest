@@ -1,7 +1,7 @@
 function loadArticles() {
-    var newsArticlesDiv = document.getElementById('newsArticles');
-    var articleContent = "";
-    var fetchArticles = fetch('http://localhost:3000/code-test.json', {
+    let newsArticlesDiv = document.getElementById('newsArticles');
+    let articleContent = "";
+    let fetchArticles = fetch('http://localhost:3000/code-test.json', {
         method: 'GET',
         headers: {
             'Accept': 'application/json',
@@ -10,7 +10,7 @@ function loadArticles() {
    .then(response => response.json())
    .then(response => {
     console.log(JSON.stringify(response))
-        for(var i=0; i<response.articles.length; i++){
+        for(let i=0; i<response.articles.length; i++){
             articleContent += `<article class="listArticle">
                            <h4>${response.articles[i].primarySectionRouteName}</h4>
                                <div class="flex-container">
@@ -29,10 +29,6 @@ function loadArticles() {
     }
     
     );
-
-
-
-    
 }
 
 loadArticles();

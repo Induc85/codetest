@@ -1,7 +1,7 @@
 function loadArticles() {
     let newsArticlesDiv = document.getElementById('newsArticles');
     let articleContent = "";
-    const fetchURL =  `${window.location.protocol}//${window.location.host}/code-test.json`; 
+    const fetchURL =  './code-test.json'; 
     async function fetchArticlesJson() {
         const response = await fetch(
                 fetchURL,
